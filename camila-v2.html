@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Camila Mascarenhas — Consultoria de Marketing e Estratégia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08080a;--fg:#f2f1ee;--mute:#8d8d95;--card:#131318;--line:#26262d;--a1:#ff6a3d;--a2:#7b5cff;--btnbg:#f2f1ee;--btnfg:#08080a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f2ee;--fg:#111114;--mute:#66666e;--card:#fff;--line:#dcd9d2;--btnbg:#111114;--btnfg:#f4f2ee}}
+:root[data-theme="light"]{--bg:#f4f2ee;--fg:#111114;--mute:#66666e;--card:#fff;--line:#dcd9d2;--btnbg:#111114;--btnfg:#f4f2ee}
+html{height:100%;scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Outfit",-apple-system,"Helvetica Neue",Arial,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(60vw 50vh at 85% 8%,color-mix(in srgb,var(--a2) 28%,transparent),transparent 70%),radial-gradient(50vw 45vh at 5% 40%,color-mix(in srgb,var(--a1) 16%,transparent),transparent 70%)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;opacity:.07;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+main{overflow-x:hidden;width:100%;max-width:100%}
+nav{position:fixed;top:calc(16px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:20;display:flex;align-items:center;gap:26px;padding:8px 8px 8px 24px;border-radius:999px;background:color-mix(in srgb,var(--card) 60%,transparent);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border:1px solid var(--line);font-size:14px;white-space:nowrap}
+nav b{font-weight:600}nav a{color:var(--mute);text-decoration:none}nav a:hover{color:var(--fg)}
+.btn{display:inline-block;background:var(--btnbg);color:var(--btnfg);padding:15px 30px;border-radius:999px;text-decoration:none;font-weight:500;font-size:17px;border:1px solid var(--btnbg);font-family:inherit;cursor:pointer;transition:transform .4s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:var(--fg);border-color:var(--fg)}
+nav .btn{padding:9px 20px;font-size:14px}
+@media(max-width:720px){nav a.h{display:none}nav{gap:16px}}
+section{padding:clamp(100px,16vw,200px) 24px}
+.w{max-width:1180px;margin:0 auto}
+h1,h2{font-weight:600;letter-spacing:-.035em;line-height:1.05;margin:0}
+h1{font-size:clamp(2.6rem,5.6vw,5.5rem);max-width:1180px}
+h2{font-size:clamp(2.2rem,4.8vw,4.4rem);max-width:1000px}
+h3{font-size:1.5rem;font-weight:600;letter-spacing:-.02em;margin:0 0 8px}
+p{margin:0}.mute{color:var(--mute)}
+.lead{font-size:clamp(1.15rem,1.8vw,1.5rem);color:var(--mute);max-width:640px;margin-top:28px;font-weight:300}
+.pill{display:inline-block;width:1.7em;height:.62em;border-radius:999px;vertical-align:middle;margin:0 .12em;background:linear-gradient(90deg,var(--a1),var(--a2))}
+.pill.b{background:linear-gradient(90deg,var(--a2),#2ec4b6)}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:160px}
+.orb{position:absolute;right:-6vw;bottom:-8vh;width:min(46vw,560px);aspect-ratio:1;border-radius:50%;background:conic-gradient(from 200deg,var(--a1),var(--a2),#2ec4b6,var(--a1));filter:blur(2px);opacity:.85;-webkit-mask:radial-gradient(circle,transparent 46%,#000 47%);mask:radial-gradient(circle,transparent 46%,#000 47%);z-index:0}
+.hero .w{position:relative;z-index:1}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:44px}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,minmax(230px,auto));grid-auto-flow:dense;gap:16px;margin-top:64px}
+.bc{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:34px;display:flex;flex-direction:column;justify-content:flex-end;font-size:clamp(1.15rem,1.7vw,1.5rem);line-height:1.25;letter-spacing:-.015em;font-weight:500;overflow:hidden;transition:transform .7s ease-out,border-color .4s}
+.bc:hover{transform:scale(1.02);border-color:var(--a1)}
+.bc.A{grid-column:span 2;grid-row:span 2;font-size:clamp(1.6rem,3vw,2.6rem);background:linear-gradient(150deg,color-mix(in srgb,var(--a2) 40%,var(--card)),var(--card) 70%)}
+.bc.B{grid-column:span 2}
+@media(max-width:820px){.bento{grid-template-columns:1fr 1fr}.bc.A,.bc.B{grid-column:span 2}.bc.A{grid-row:span 1}}
+.marq{overflow:hidden;border-block:1px solid var(--line);padding:34px 0;margin-top:64px}
+.mt{display:flex;width:max-content;animation:mq 32s linear infinite;font-size:clamp(2rem,5vw,4.4rem);font-weight:600;letter-spacing:-.03em}
+.mt span{padding-right:.6em}.mt span:nth-child(even){color:transparent;-webkit-text-stroke:1px var(--mute)}
+@keyframes mq{to{transform:translateX(-50%)}}
+.acc{display:flex;gap:12px;height:440px;margin-top:64px}
+.sl{flex:1;border-radius:28px;background:var(--card);border:1px solid var(--line);padding:30px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;cursor:pointer;transition:flex .8s cubic-bezier(.2,.8,.2,1);min-width:0;outline:none}
+.sl:hover,.sl:focus-visible,.sl.open{flex:3.2;background:linear-gradient(160deg,color-mix(in srgb,var(--a1) 22%,var(--card)),var(--card))}
+.sl h3{font-size:1.3rem;color:var(--mute);font-weight:400}
+.sl .m{opacity:0;transform:translateY(14px);transition:.6s .1s}
+.sl:hover .m,.sl:focus-visible .m,.sl.open .m{opacity:1;transform:none}
+.sl .m b{display:block;font-size:1.9rem;letter-spacing:-.02em;line-height:1.1;margin-bottom:10px}
+@media(max-width:820px){.acc{flex-direction:column;height:auto}.sl{gap:24px}.sl .m{opacity:1;transform:none}}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.mleft{height:100vh;display:flex;flex-direction:column;justify-content:center}
+.mr{display:grid;gap:20px;padding:12vh 0}
+.mr .bc{min-height:260px;justify-content:space-between}
+.mr .bc b{font-size:4.5rem;line-height:1;color:var(--a1);font-weight:600;letter-spacing:-.05em}
+.mr .bc p{color:var(--mute);font-size:1.15rem;font-weight:300}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:20px}.mleft{height:auto}}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:64px}
+.ba>div{border-radius:28px;padding:44px 36px;font-size:clamp(1.3rem,2.4vw,2rem);font-weight:500;letter-spacing:-.02em;line-height:1.25}
+.ba .x{border:1px solid var(--line);color:var(--mute)}.ba .y{background:var(--fg);color:var(--bg)}
+.ba small{display:block;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px;opacity:.6}
+.pairs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:16px}
+.pairs div{border:1px solid var(--line);border-radius:22px;padding:24px;font-size:1.3rem;font-weight:500;letter-spacing:-.015em}
+.pairs s{color:var(--mute);text-decoration-thickness:1px}
+@media(max-width:820px){.ba{grid-template-columns:1fr}}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:64px}
+.g3 .bc{justify-content:flex-start;min-height:0;gap:10px;font-size:1.05rem;font-weight:300;color:var(--mute)}
+.g3 .bc h3{color:var(--fg)}.g3 .bc small{color:var(--a1);font-weight:600;letter-spacing:.06em}
+.g3 ul{margin:8px 0 0;padding-left:20px}.g3 li{margin:6px 0}
+.quiz{display:grid;gap:12px;max-width:720px;margin-top:56px}
+.opt{font:inherit;font-size:1.2rem;text-align:left;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 26px;cursor:pointer;transition:.3s}
+.opt:hover{border-color:var(--a1)}.opt.on{border-color:var(--a1);background:color-mix(in srgb,var(--a1) 16%,var(--card))}
+#res{display:none;margin-top:48px}#res h2{font-size:clamp(1.8rem,3.4vw,3rem);margin-bottom:28px}
+.layers{display:grid;grid-template-columns:1fr 1.3fr;gap:16px;margin-top:56px}
+.stack{display:grid;gap:8px}
+.stack button{font:inherit;font-size:1.25rem;font-weight:500;text-align:left;padding:18px 24px;border-radius:18px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer;transition:.35s}
+.stack button.on{background:var(--fg);color:var(--bg);transform:translateX(10px)}
+.pane{border:1px solid var(--line);border-radius:28px;padding:40px;display:flex;flex-direction:column;justify-content:center;background:var(--card)}
+.pane p{color:var(--mute);font-size:1.25rem;font-weight:300}
+@media(max-width:820px){.layers{grid-template-columns:1fr}}
+.myth{margin-top:56px}
+.myth div{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:28px 0;border-top:1px solid var(--line);font-size:clamp(1.2rem,2vw,1.7rem);letter-spacing:-.02em;font-weight:500}
+.myth div span{color:var(--mute);text-decoration:line-through;text-decoration-thickness:1px}
+@media(max-width:820px){.myth div{grid-template-columns:1fr;gap:8px}}
+.man{background:#000;color:#f2f1ee}
+.man .w{max-width:1000px}
+.scrub{font-size:clamp(1.8rem,4vw,3.5rem);font-weight:600;letter-spacing:-.03em;line-height:1.15}
+.scrub .wd{opacity:.12;display:inline-block;margin-right:.24em}
+.who{display:grid;grid-template-columns:auto 1fr;gap:56px;align-items:center}
+.ph{width:min(30vw,300px);aspect-ratio:1;border-radius:36px;background:linear-gradient(140deg,var(--a1),var(--a2));display:grid;place-items:center;font-size:5rem;font-weight:700;color:#fff;letter-spacing:-.05em}
+.stats{display:flex;flex-wrap:wrap;gap:44px;margin-top:40px}.stats b{display:block;font-size:3rem;letter-spacing:-.04em}.stats span{color:var(--mute)}
+@media(max-width:820px){.who{grid-template-columns:1fr}.ph{width:180px}}
+details{border-top:1px solid var(--line);padding:24px 0}details:last-child{border-bottom:1px solid var(--line)}
+summary{font-size:1.4rem;font-weight:500;letter-spacing:-.015em;cursor:pointer}details p{color:var(--mute);margin-top:12px;font-weight:300}
+.end{text-align:center;padding-block:clamp(140px,20vw,260px)}
+.end h2{margin:0 auto;font-size:clamp(2.4rem,6.4vw,6rem)}.end .cta{justify-content:center}
+footer{padding:32px 24px calc(32px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+<nav><b>Camila Mascarenhas</b><a class="h" href="#metodo">Método</a><a class="h" href="#servicos">Serviços</a><a class="h" href="#cases">Cases</a><a class="h" href="#faq">FAQ</a><a class="btn" href="#contato">Vamos conversar</a></nav>
+
+<section class="hero">
+<div class="orb" aria-hidden="true"></div>
+<div class="w">
+<h1 class="hl">Marketing não precisa ser <span class="pill"></span> barulho. Precisa fazer <span class="pill b"></span> sentido.</h1>
+<p class="lead">Estratégia, posicionamento e comunicação para marcas que querem ser lembradas pelo motivo certo.</p>
+<div class="cta"><a class="btn" href="#contato">Vamos conversar</a><a class="btn ghost" href="#metodo">Conheça o método</a></div>
+</div></section>
+
+<section><div class="w">
+<h2 class="rv">Você está <span class="pill"></span> aqui?</h2>
+<div class="bento">
+<div class="bc A rv">Marketing não começa no Instagram. Não se trata de fazer posts: cada etapa sustenta a próxima, e a maioria das marcas começa pela última.</div>
+<div class="bc B rv">Seu negócio é bom, mas ninguém entende exatamente o que você faz.</div>
+<div class="bc rv">Você posta, mas não sabe se está construindo uma marca.</div>
+<div class="bc rv">Sua comunicação mudou tantas vezes que perdeu consistência.</div>
+</div>
+<p class="lead rv" style="max-width:none;color:var(--fg)">Você sabe vender. Só não sabe traduzir isso em posicionamento.</p>
+<div class="marq" aria-hidden="true"><div class="mt"><span>Identidade</span><span>Posicionamento</span><span>Estratégia</span><span>Comunicação</span><span>Conteúdo</span><span>Conversão</span><span>Identidade</span><span>Posicionamento</span><span>Estratégia</span><span>Comunicação</span><span>Conteúdo</span><span>Conversão</span></div></div>
+</div></section>
+
+<section id="servicos"><div class="w">
+<h2 class="rv">Organizado pelo que você precisa <span class="pill b"></span> resolver.</h2>
+<div class="acc rv" id="acc">
+<div class="sl" tabindex="0"><h3>“Preciso ser percebido de outra forma.”</h3><div class="m"><b>Posicionamento & Branding</b><p class="mute">Definir como a marca ocupa espaço na cabeça das pessoas.</p></div></div>
+<div class="sl" tabindex="0"><h3>“Não sei o que comunicar.”</h3><div class="m"><b>Estratégia de conteúdo</b><p class="mute">Do que dizer ao porquê de dizer, com intenção.</p></div></div>
+<div class="sl" tabindex="0"><h3>“Minha comunicação não parece profissional.”</h3><div class="m"><b>Identidade & Direção de comunicação</b><p class="mute">Consistência visual e verbal em todos os pontos de contato.</p></div></div>
+<div class="sl" tabindex="0"><h3>“Quero transformar atenção em negócio.”</h3><div class="m"><b>Estratégia de aquisição</b><p class="mute">Levar a atenção conquistada até a conversão.</p></div></div>
+</div></div></section>
+
+<section id="metodo"><div class="w split">
+<div class="mleft"><h2>Método <span class="pill"></span> M.A.R.C.A.</h2><p class="lead">Uma metodologia, não uma pessoa vendendo serviços.</p></div>
+<div class="mr">
+<div class="bc"><b>M</b><div><h3>Mapear</h3><p>Entender negócio, público e cenário.</p></div></div>
+<div class="bc"><b>A</b><div><h3>Analisar</h3><p>Identificar problemas e oportunidades.</p></div></div>
+<div class="bc"><b>R</b><div><h3>Reposicionar</h3><p>Definir como a marca deve ocupar espaço.</p></div></div>
+<div class="bc"><b>C</b><div><h3>Comunicar</h3><p>Transformar estratégia em linguagem.</p></div></div>
+<div class="bc"><b>A</b><div><h3>Acompanhar</h3><p>Medir, aprender e ajustar.</p></div></div>
+</div></div></section>
+
+<section><div class="w">
+<h2 class="rv">A diferença está na <span class="pill b"></span> clareza.</h2>
+<div class="ba rv">
+<div class="x"><small>Antes</small>“Faço marketing para empresas.”</div>
+<div class="y"><small>Depois</small>“Construo estratégias de posicionamento para empresas B2B que precisam transformar conhecimento técnico em autoridade.”</div>
+</div>
+<div class="pairs rv">
+<div><s>Genérica</s><br>Estratégica</div><div><s>Postar</s><br>Construir narrativa</div><div><s>Seguir tendência</s><br>Criar identidade</div><div><s>Alcance</s><br>Relevância</div>
+</div></div></section>
+
+<section id="cases"><div class="w">
+<h2 class="rv">Projetos que <span class="pill"></span> contam histórias.</h2>
+<div class="g3">
+<div class="bc rv"><small>CLIENTE 01</small><h3>Rebranding + posicionamento</h3><ul><li>O problema: [descreva]</li><li>A estratégia: [descreva]</li><li>A execução: [descreva]</li><li>O resultado: [descreva]</li></ul></div>
+<div class="bc rv"><small>CLIENTE 02</small><h3>Estratégia de conteúdo</h3><ul><li>O problema: [descreva]</li><li>A estratégia: [descreva]</li><li>A execução: [descreva]</li><li>O resultado: [descreva]</li></ul></div>
+<div class="bc rv"><small>NÚMEROS</small><h3>Só dados reais.</h3><p>Alcance, leads e receita atribuída entram aqui quando houver métrica confiável. Sem ela, o case é qualitativo.</p></div>
+</div></div></section>
+
+<section><div class="w">
+<h2 class="rv">Como é trabalhar comigo.</h2>
+<div class="g3">
+<div class="bc rv"><h3>Você não vai receber</h3><ul><li>Uma fórmula pronta</li><li>Um calendário genérico de posts</li><li>“Poste às 19h que dá engajamento”</li><li>Estratégia baseada em trend</li></ul></div>
+<div class="bc rv" style="color:var(--fg)"><h3>Você vai receber</h3><ul><li>Diagnóstico</li><li>Direcionamento</li><li>Raciocínio estratégico</li><li>Clareza</li><li>Acompanhamento</li></ul></div>
+</div></div></section>
+
+<section><div class="w">
+<h2 class="rv">O que mais parece com <span class="pill b"></span> sua empresa?</h2>
+<div class="quiz" id="quiz">
+<button class="opt">Tenho um bom produto, mas minha comunicação não demonstra isso.</button>
+<button class="opt">Tenho audiência, mas pouca conversão.</button>
+<button class="opt">Minha marca perdeu consistência.</button>
+<button class="opt">Não sei exatamente como me posicionar.</button>
+<button class="opt">Preciso organizar minha estratégia.</button>
+</div>
+<div id="res"><h2>Talvez seu problema não seja conteúdo. É posicionamento.</h2><a class="btn" href="#contato">Conversar sobre isso</a></div>
+</div></section>
+
+<section><div class="w">
+<h2 class="rv">Desmonte uma marca. Cada decisão <span class="pill"></span> puxa a próxima.</h2>
+<div class="layers rv"><div class="stack" id="stack"></div><div class="pane"><h3 id="pt"></h3><p id="pp"></p></div></div>
+</div></section>
+
+<section><div class="w">
+<h2 class="rv">Marketing sem <span class="pill b"></span> achismo.</h2>
+<div class="myth">
+<div class="rv"><span>É só postar todo dia.</span><b>Não necessariamente.</b></div>
+<div class="rv"><span>Precisa viralizar.</span><b>Viralização não é estratégia.</b></div>
+<div class="rv"><span>Todo mundo é seu público.</span><b>Então ninguém é seu público específico.</b></div>
+<div class="rv"><span>É só copiar o que está funcionando.</span><b>O que funciona para outra marca pode destruir a sua diferenciação.</b></div>
+</div></div></section>
+
+<section class="man"><div class="w">
+<p class="scrub" id="scrub">Não acreditamos em marketing por obrigação. Não acreditamos em postar por postar. Não acreditamos em estratégia copiada. Não acreditamos que toda marca precisa falar com todo mundo. Acreditamos em clareza. Em posicionamento. Em comunicação que tem intenção. Porque marketing não é preencher espaço. É ocupar um lugar na cabeça das pessoas.</p>
+</div></section>
+
+<section><div class="w who">
+<div class="ph rv">CM</div>
+<div class="rv"><h2>Camila Mascarenhas</h2><p class="lead">Consultora de marketing e estratégia. “Uma marca forte não precisa falar mais alto. Precisa saber exatamente o que tem a dizer.”</p>
+<div class="stats"><div><b>X</b><span>anos de experiência</span></div><div><b>X</b><span>projetos</span></div><div><b>X</b><span>segmentos</span></div><div><b>X</b><span>clientes</span></div></div></div>
+</div></section>
+
+<section><div class="w">
+<h2 class="rv">Depois que você entra em <span class="pill"></span> contato.</h2>
+<div class="g3">
+<div class="bc rv"><small>01</small><h3>Conversa inicial</h3><p>Entendemos o momento da sua empresa.</p></div>
+<div class="bc rv"><small>02</small><h3>Diagnóstico</h3><p>Identificamos os principais gargalos.</p></div>
+<div class="bc rv"><small>03</small><h3>Direcionamento</h3><p>Definimos o que precisa ser feito.</p></div>
+<div class="bc rv"><small>04</small><h3>Projeto</h3><p>Construímos a estratégia.</p></div>
+<div class="bc rv"><small>05</small><h3>Acompanhamento</h3><p>Medimos e refinamos.</p></div>
+</div></div></section>
+
+<section id="faq"><div class="w" style="max-width:820px">
+<h2 class="rv" style="margin-bottom:56px">Perguntas frequentes.</h2>
+<details><summary>Preciso contratar todos os serviços?</summary><p>[Responda aqui]</p></details>
+<details><summary>Vocês trabalham com empresas pequenas?</summary><p>[Responda aqui]</p></details>
+<details><summary>A consultoria inclui execução?</summary><p>[Responda aqui]</p></details>
+<details><summary>Quanto tempo leva um projeto?</summary><p>[Responda aqui]</p></details>
+<details><summary>Vocês trabalham remotamente?</summary><p>[Responda aqui]</p></details>
+<details><summary>Como funciona o orçamento?</summary><p>[Responda aqui]</p></details>
+</div></section>
+
+<section class="end" id="contato"><div class="w">
+<h2 class="rv">Sua marca já existe. Talvez ela só ainda não esteja dizendo tudo o que poderia.</h2>
+<div class="cta"><a class="btn" href="mailto:contato@exemplo.com">Conversar sobre meu projeto</a></div>
+</div></section>
+<footer><span>Camila Mascarenhas</span><span>Consultoria de marketing e estratégia, 2026</span></footer>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+var L=[["Logo","O símbolo é a assinatura, não a estratégia. Só funciona quando representa uma decisão já tomada."],["Posicionamento","O lugar que a marca ocupa na cabeça das pessoas. Tudo o que vem abaixo nasce daqui."],["Tom de voz","Se o posicionamento é precisão, o tom não pode ser piadista. A voz precisa soar como a promessa."],["Oferta","O que se vende e como se apresenta. Uma oferta desalinhada contradiz o posicionamento."],["Conteúdo","O que se diz no dia a dia. Sem as camadas acima, vira calendário preenchido."],["Experiência","Onde a promessa é cumprida ou quebrada. A camada que o cliente realmente sente."]];
+var st=document.getElementById('stack');
+function pick(i){[].forEach.call(st.children,function(c,j){c.classList.toggle('on',i===j)});document.getElementById('pt').textContent=L[i][0];document.getElementById('pp').textContent=L[i][1]}
+L.forEach(function(l,i){var b=document.createElement('button');b.textContent=l[0];b.onclick=function(){pick(i)};st.appendChild(b)});pick(0);
+document.querySelectorAll('#quiz .opt').forEach(function(b){b.onclick=function(){b.classList.toggle('on');document.getElementById('res').style.display=document.querySelector('#quiz .on')?'block':'none'}});
+var sl=document.querySelectorAll('#acc .sl');
+sl.forEach(function(s){s.onclick=function(){var o=s.classList.contains('open');sl.forEach(function(x){x.classList.remove('open')});if(!o)s.classList.add('open')};s.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();s.click()}}});
+var sc=document.getElementById('scrub');
+sc.innerHTML=sc.textContent.split(' ').map(function(w){return '<span class="wd">'+w+'</span>'}).join(' ');
+var calm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!window.gsap||!window.ScrollTrigger||calm){sc.querySelectorAll('.wd').forEach(function(w){w.style.opacity=1});return}
+gsap.registerPlugin(ScrollTrigger);
+gsap.from('.hl,.hero .lead,.hero .cta',{y:40,opacity:0,duration:1.1,ease:'power3.out',stagger:.15});
+gsap.from('.orb',{scale:.7,rotate:-40,opacity:0,duration:1.8,ease:'power3.out'});
+gsap.utils.toArray('.rv').forEach(function(el){gsap.from(el,{y:50,opacity:0,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}})});
+gsap.to('#scrub .wd',{opacity:1,stagger:.1,ease:'none',scrollTrigger:{trigger:'#scrub',start:'top 75%',end:'bottom 45%',scrub:true}});
+ScrollTrigger.matchMedia({'(min-width:821px)':function(){ScrollTrigger.create({trigger:'#metodo .split',start:'top top',end:'bottom bottom',pin:'.mleft',pinSpacing:false});
+gsap.utils.toArray('.mr .bc').forEach(function(c){gsap.fromTo(c,{scale:.85,opacity:.3},{scale:1,opacity:1,ease:'none',scrollTrigger:{trigger:c,start:'top 90%',end:'top 50%',scrub:true}})})}});
+})();
+</script>
+</body>
+</html>
